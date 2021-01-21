@@ -1,0 +1,55 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.auth-wrapper {
+    background: rgba(0, 0, 0, .5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 30%;
+
+        .input-field:last-child {
+            margin-bottom: 0;
+        }
+
+        .btn, .btn-flat {
+            width: 100%;
+        }
+
+        .btn-flat:last-child {
+            margin-top: 1rem;
+        }
+
+        .auth-card-title {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .icon-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: .5rem;
+                border-radius: 50%;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+}

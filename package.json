@@ -1,0 +1,37 @@
+{
+    "name": "mern-stack",
+    "version": "1.0.0",
+    "description": "mern stack app",
+    "main": "app.js",
+    "scripts": {
+        "start": "cross-env NODE_ENV=production node app.js",
+        "serve": "nodemon app.js",
+        "client": "npm run start --prefix client",
+        "client:install": "npm i --prefix client",
+        "client:build": "npm run build --prefix client",
+        "dev": "cross-env NODE_ENV=development concurrently \"npm run serve\" \"npm run client\""
+    },
+    "keywords": [
+        "mern",
+        "nodejs",
+        "react",
+        "express",
+        "mongodb"
+    ],
+    "author": "Alexandro <parashnokwtf@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.0.0",
+        "config": "^3.3.3",
+        "express": "^4.17.1",
+        "express-validator": "^6.9.2",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.11.12",
+        "shortid": "^2.2.15"
+    },
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "cross-env": "^7.0.3",
+        "nodemon": "^2.0.7"
+    }
+}
