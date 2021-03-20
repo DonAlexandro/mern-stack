@@ -1,6 +1,6 @@
 # Link Reducer
 
-This is my first full stack application, wrote with MERN-stack.
+This is my first full stack application, created using MERN.
 There is authentication with JWT-token and simple functional to reduce long links.
 More details you could see in the server's and client's **package.json**.
 
